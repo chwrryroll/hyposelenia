@@ -1,5 +1,7 @@
-import gleam/io
+import hyposelenia/handler  . {type Handler}
 
-pub fn main() -> Nil {
-  io.println("Hyposelenia: Not ready yet!")
+pub type Hyposelenia {
+  Hyposelenia(
+    handlers: List(Handler)
+  )
 }
